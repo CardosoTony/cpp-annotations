@@ -62,6 +62,19 @@ void checkSignSum(float number1, float number2, float number3)
   std::cout << std::endl;
 }
 
+void isDivisibleByThreeAndFive(int number)
+{
+  if (number % 3 == 0 && number % 5 == 0)
+  {
+    std::cout << number << " is divisible by 3 and 5.";
+  }
+  else
+  {
+    std::cout << number << " is not divisible by 3 and 5.";
+  }
+  std::cout << std::endl;
+}
+
 int main()
 {
   int age, number;
@@ -86,6 +99,10 @@ int main()
   std::cout << "Enter the third number: ";
   std::cin >> number3;
   checkSignSum(number1, number2, number3);
+
+  std::cout << "Enter a number: ";
+  std::cin >> number;
+  isDivisibleByThreeAndFive(number);
 
   return 0;
 }
