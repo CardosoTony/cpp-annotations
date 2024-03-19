@@ -2,6 +2,7 @@
 
 void checkAge(int age)
 {
+  /* Standard mode
   if (age >= 18)
   {
     std::cout << "You are of legal age.";
@@ -10,11 +11,16 @@ void checkAge(int age)
   {
     std::cout << "You are not of legal age";
   }
+  */
+
+  // Compact mode: Usage the conditional ternary operator.
+  (age >= 18) ? std::cout << "You are of legal age." : std::cout << "You are not of legal age";
   std::cout << std::endl;
 }
 
 void checkEvenOdd(int number)
 {
+  /* Standard mode
   if (number % 2 == 0)
   {
     std::cout << number << " is even.";
@@ -23,6 +29,11 @@ void checkEvenOdd(int number)
   {
     std::cout << number << " is odd.";
   }
+  std::cout << std::endl;
+  */
+
+  // Compact mode: Usage the conditional ternary operator.
+  (number % 2 == 0) ? std::cout << number << " is even." : std::cout << number << " is odd.";
   std::cout << std::endl;
 }
 
